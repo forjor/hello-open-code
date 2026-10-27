@@ -44,5 +44,5 @@
     }
   },
 
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y make && npm install -g opencode-ai && echo 'OpenCode devcontainer ready. Export a provider key (ANTHROPIC_API_KEY / GEMINI_API_KEY / XAI_API_KEY) and run: make hello'"
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y make curl tar && curl -fsSL https://opencode.ai/install | bash -s -- --no-modify-path && echo 'export PATH=$HOME/.opencode/bin:$PATH' | tee -a $HOME/.zshrc $HOME/.bashrc >/dev/null && echo 'OpenCode devcontainer ready. Export a provider key (ANTHROPIC_API_KEY / GEMINI_API_KEY / XAI_API_KEY) and run: make hello'"
 }

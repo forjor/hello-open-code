@@ -11,9 +11,9 @@ A devcontainer for [opencode](https://opencode.ai) that lets you talk to **Claud
 | Git | latest |
 | Zsh | latest |
 | make | latest |
-| opencode CLI (`opencode-ai`) | latest |
+| opencode CLI | latest (via [opencode.ai/install](https://opencode.ai/install)) |
 
-Your host `~/.config/opencode` and `~/.local/share/opencode` are bind-mounted into the container, so any opencode config or `opencode auth login` credentials on your host carry in. The three provider keys are also passed through from your host environment if they're already exported there.
+opencode is installed with its official installer into `~/.opencode/bin` (added to `PATH`). Your host `~/.config/opencode` and `~/.local/share/opencode` are bind-mounted into the container, so any opencode config or `opencode auth login` credentials on your host carry in. The three provider keys are also passed through from your host environment if they're already exported there.
 
 ## Quick start
 
