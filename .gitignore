@@ -1,0 +1,3 @@
+# opencode local state (never commit credentials)
+.opencode/
+auth.json
